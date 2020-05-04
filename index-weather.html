@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Sigmar+One&display=swap" rel="stylesheet">
+<title>Weather Website</title>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="css/mdb.min.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="css/style-weather.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid " id="changeMargin">
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="container" id="header">
+        <div class="row ">
+          <div class="col-sm-12 col-md-8 col-pos">
+            <h1 id="title-website">WEATHER FORECAST</h1>
+          </div>
+        </div>
+      </div>
+      <!-- input-section -->
+      <div class="container-input">
+          <div class="card">
+              <div class="card-body" id="card-body">
+                  <div class="input-city">
+                      <input class="form-control" type="text" id="cityName" placeholder="Enter a city name...">
+                    </div>
+                    <div class="btn-go"  >
+                        <button class="btn btn-light" onclick="getWeather()"> Go </button>
+                  </div>
+              </div>
+            </div>
+      </div>        
+      <!-- Sub-Wrapper -->
+
+      <!-- Generic information -->
+      <div class="generic-information">
+        <!-- Card -->
+        <div class="card weather-card" id= "background">
+
+        <!-- Card content -->
+        <div class="card-body pb-3">
+  
+          <!-- Title -->
+          <div class="title">
+            <h4 class="card-title font-weight-bold" id="namecountryResponse">  </h4>
+            <img id="iconResponse" src="" alt="">
+          </div>
+          <!-- Situation -->
+          <p class="card-text" id="situationResponse" > </p>
+          <!-- Temperature -->
+          <div class="d-flex justify-content-between">
+            <p class="display-1" id="tempResponse"> <div class="degree"> </div> </p>
+          </div>
+          <div class="othersInfo">
+            <p><i id="windSpeedResponse"></i> </p>
+            
+            <p><i id="windDegreeResponse"></i></p>
+          </div>
+        </div>
+        </div>
+      </div>
+  <!-- Card -->        
+  <!-- Others info  -->
+        <div class="container">
+          <div class="row" >
+            <div class="col-12 col-lg-4 grey lighten-2" > <span id="tempMin-left"></span> </div>
+            <div class="col-12 col-lg-4 teal lighten-5"><span id="tempMin-right"></span></div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div  class="col-12 col-lg-4 grey lighten-2"><span id="tempMax-left"></span></div>
+              <div class="col-12 col-lg-4 teal lighten-5"> <span id="tempMax-right"> </span></div>
+            </div>
+        </div>      
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-4  grey lighten-2"><span id="humidity-left"></span></div>
+              <div class="col-12 col-lg-4 teal lighten-5"><span id="humidity-right"></span></div>
+            </div>
+        </div>        
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-4  grey lighten-2"><span id="pressure-left"></span></div>
+              <div class="col-12 col-lg-4 teal lighten-5"><span id="pressure-right"></span></div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8" id="additionalInfo" ></div>
+
+        </div>
+        </div>
+        <!--  -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4  grey lighten-2"><span id="sunrise-left"></span></div>
+            <div class="col-12 col-lg-4 teal lighten-5"><span id="sunrise-right"></span></div>
+        </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4  grey lighten-2"><span id="sunset-left"></span></div>
+            <div class="col-12 col-lg-4 teal lighten-5"><span id="sunset-right"></span></div>
+          </div>
+        </div>               
+      </div>
+  </div>
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
